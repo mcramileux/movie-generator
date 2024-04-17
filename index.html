@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="/src/styles.css">
     <title>AI Movie Generator 🎥</title>
 </head>
@@ -15,9 +16,9 @@
     </header>
     
     <main>
-        <form action="">
+        <form id="movie-generator-form" action="">
             <input type="text" 
-                placeholder="Search a movie"
+                placeholder="Look up a movie topic..."
                 autofocus
                 required
                 autocomplete="off"
@@ -26,11 +27,7 @@
             <input type="submit" class="submit-button" />
         </form>
 
-        <div class="movie">
-            The Favourite
-            <br />
-            Poor Things
-        </div>
+        <div class="movie" id="movie"></div>
     </main>
 
     <footer>
